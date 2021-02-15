@@ -123,6 +123,9 @@ extension ChatViewController: UITableViewDataSource{
     // 위의 messages.count 만큼 실행이됨
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        // We need to determine whether the current cell that is going to be displayed is a "sender" bubble
+        // or a "received" bubble
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell  //ReusableCell
         
         // Give the cell some data

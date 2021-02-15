@@ -6,8 +6,8 @@ class MessageCell: UITableViewCell {
     @IBOutlet weak var messageBubble: UIView!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var rightImageView: UIImageView!
+    @IBOutlet weak var leftImageView: UIImageView!
     
-
     // The below method is called everytime we create a new MessageCell.xib
     override func awakeFromNib() {
         super.awakeFromNib()
